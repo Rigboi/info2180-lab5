@@ -1,1 +1,77 @@
-/* Add your own styles */
+header {
+    background-color: #666;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#lookup,
+#cities {
+    min-height: 40px;
+    padding: 0 1.65rem;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    font: 600 0.875rem/1.2 Inter, system-ui, sans-serif;
+    box-shadow: 0 3px 7px rgb(24 32 64 / 22%);
+    cursor: pointer;
+}
+
+#lookup {
+    background-color: #2845f5;
+}
+
+#cities {
+    background-color: #272938;
+}
+
+#lookup:hover,
+#cities:hover {
+    filter: brightness(1.1);
+}
+
+#lookup:focus-visible,
+#cities:focus-visible {
+    outline: 2px solid #2845f5;
+    outline-offset: 3px;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.country-field,
+.lookup-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    max-width: 100%;
+}
+
+#country {
+    box-sizing: border-box;
+    width: 16rem;
+    max-width: 100%;
+    padding: 0.5rem 0.75rem;
+}
+
+#result table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#result th,
+#result td {
+    border: 1px solid #b5b5b5;
+    padding: 0.5rem 0.75rem;
+}

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 CitButton.addEventListener("click", async () => {
-    const url = `world.php?country={encodeURIComponent(country.value)}&lookup=cities`;
+    const url = `world.php?country=${encodeURIComponent(country.value)}&lookup=cities`;
     const response = await fetch(url);
     result.innerHTML = await response.text();
 
